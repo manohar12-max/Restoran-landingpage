@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/rersponsive.css" />
+    <!-- owl carousle -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+    <header class="header-wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top px-4 px-lg-5">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-utensils"></i>
+            Restoran</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav main-btn-nav">
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#"><div class="button main-btn"> Book A Table</div>
+                 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- banner -->
+    <section id="home" class="banner-wrapper">
+      <div class="gradient"></div>
+      <div class="container banner-container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-lg-0 mb-5">
+            <h1 class="banner-title">
+              Enjoy our <br />
+              Delicious meal
+            </h1>
+            <p class="banner-subtitle">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat ame
+            </p>
+            <div>
+              <a class="nav-link main-btn" href="#">Book A Table</a>
+            </div>
+          </div>
+          <div class="col-lg-6 overflow-hidden">
+            <img src="/images/hero.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section id="about" class="about-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-lg-0 mb-4">
+            <div class="row g-3">
+              <div class="col-6">
+                <img
+                  src="/images/about/about-1.jpg"
+                  alt=""
+                  class="img1 w-100 img-fluid"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/images/about/about-2.jpg"
+                  alt=""
+                  class="img2 w-75 img-fluid"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/images/about/about-3.jpg"
+                  alt=""
+                  class="img3 w-75 img-fluid"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/images/about/about-4.jpg"
+                  alt=""
+                  class="img4 w-100 img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-us">
+              <div class="about-title1">
+                <h4>About Us --</h4>
+              </div>
+              <div class="about-title2 mt-2 mb-4">
+                <h2>
+                  Welcome to
+                  <span><i class="fa fa-3x fa-utensils"></i></span> Restoran
+                </h2>
+              </div>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet
+                lorem sit.
+              </p>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-sm-6 mb-3">
+                <div class="display-banner">
+                  <h1 id="counter1"></h1>
+                  <div class="banner">
+                    <p>Year of</p>
+                    <h5>EXPERIENCE</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="display-banner">
+                  <h1 id="counter2"></h1>
+                  <div class="banner">
+                    <p>Popular</p>
+                    <h5>MASTER CHEFS</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="nav-link main-btn" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cards-section -->
+    <section id="service" class="card-section">
+      <div class="container">
+        <div class="row align-items-center px-2">
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-2">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <h4 class="card-title">Master Chefs</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-2">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa fa-3x fa-utensils"></i>
+              </div>
+              <h4 class="card-title">Quality Food</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-2">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa fa-3x fa-cart-plus"></i>
+              </div>
+              <h4 class="card-title">Online Order</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col md-6 mb-lg-0 mb-2">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa fa-3x fa-headset"></i>
+              </div>
+              <h4 class="card-title">24/7 Service</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu-section -->
+    <section id="menu" class="service-wrapper">
+      <div class="container">
+        <div class="service-title text-center">
+          <h4>-- Food Menu --</h4>
+        </div>
+        <div class="service-subtitle mb-4 text-center">
+          <h1>Most Popular Items</h1>
+        </div>
+        <div class="menu-selector text-center mb-4">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-start"
+                aria-current="page"
+                href="#table"
+              >
+                <div class="menu-items1">
+                  <span>Popular</span>
+                  <h6>Breakfast</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#table">
+                <div class="menu-items2">
+                  <span>Special</span>
+                  <h6>Lunch</h6>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-end" href="#table">
+                <div class="menu-items3">
+                  <span>Lovely</span>
+                  <h6>Dinner</h6>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="table" class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-1.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-2.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-3.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-4.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-5.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-6.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-7.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="table-card d-flex align-items-center pb-1">
+              <img src="/images/table/menu-8.jpg" alt="" />
+              <div class="dish-name d-flex flex-column text-start px-2 w-100">
+                <div class="dish-title d-flex justify-content-between">
+                  <h5>Chicken Burger</h5>
+                  <h5 style="color: #fea116">$115</h5>
+                </div>
+                <span>Ipsum ipsum clita erat amet dolor justo diam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- book-table -->
+    <div id="reservation" class="book-table-form">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-md-6 p-0">
+            <div class="video-frame"></div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="booking-form p-4">
+              <div class="reservation-title">
+                <h4>-- Reservation --</h4>
+              </div>
+              <div class="reservation-subtitle mb-0">
+                <h1>Book A Table Online</h1>
+              </div>
+              <form>
+                <div class="row g-2">
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Your Name"
+                      />
+                      <label for="floatingInput">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Your Email"
+                      />
+                      <label for="floatingInput">Your Email</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2">
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="special-req">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Special request</label>
+                  </div>
+                </div>
+              </form>
+              <button class="main-btn w-100">Book A Table</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- popular chefs -->
+    <section id="team" class="team-wrapper">
+      <div class="container">
+        <div class="team-title text-center">
+          <h4>-- Team Members --</h4>
+        </div>
+        <div class="team-subtitle mb-4 text-center">
+          <h1>Our Master Chefs</h1>
+        </div>
+      </div>
+      <section class="card-section py-4">
+        <div class="container">
+          <div class="row align-items-center px-2">
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-2">
+              <div
+                class="maincard text-center d-flex flex-column justify-content-around pb-0"
+              >
+                <div class="card-non-hover">
+                  <div class="card-img text-center">
+                    <img
+                      src="/images/chefs/team-1.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h4 class="card-title mt-3">Full Name</h4>
+                  <span class="card-text"> Designation </span>
+                </div>
+                <div class="card-social-handler mx-auto mt-3 mb-0">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-2">
+              <div
+                class="maincard text-center d-flex flex-column justify-content-around pb-0"
+              >
+                <div class="card-non-hover">
+                  <div class="card-img text-center">
+                    <img
+                      src="/images/chefs/team-2.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h4 class="card-title mt-3">Full Name</h4>
+                  <span class="card-text"> Designation </span>
+                </div>
+                <div class="card-social-handler mx-auto mt-3 mb-0">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-2">
+              <div
+                class="maincard text-center d-flex flex-column justify-content-around pb-0"
+              >
+                <div class="card-non-hover">
+                  <div class="card-img text-center">
+                    <img
+                      src="/images/chefs/team-3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h4 class="card-title mt-3">Full Name</h4>
+                  <span class="card-text"> Designation </span>
+                </div>
+                <div class="card-social-handler mx-auto mt-3 mb-0">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-2">
+              <div
+                class="maincard text-center d-flex flex-column justify-content-around pb-0"
+              >
+                <div class="card-non-hover">
+                  <div class="card-img text-center">
+                    <img
+                      src="/images/chefs/team-4.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h4 class="card-title mt-3">Full Name</h4>
+                  <span class="card-text"> Designation </span>
+                </div>
+                <div class="card-social-handler mx-auto mt-3 mb-0">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- testimonials -->
+    <section id="testimonial" class="testimonial-wrapper">
+      <div class="container">
+        <div class="testimonial-title text-center">
+          <h4>-- Testimonial --</h4>
+        </div>
+        <div class="testimonial-subtitle mb-4 text-center">
+          <h1>Our Client Say!!!</h1>
+        </div>
+        <div class="testimonial-carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="testimonial-card">
+                <i class="fa fa-quote-left fa-2x mb-3"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero veritatis voluptate debitis aspernatur nesciunt
+                  deserunt!
+                </p>
+                <div class="user d-flex">
+                  <div class="user-pic">
+                    <img src="/images/testimonial/testimonial-1.jpg" alt="" />
+                  </div>
+                  <div class="user-review d-block w-100 px-2">
+                    <h6 class="py-0 mb-0">Client Name</h6>
+                    <small
+                      >Yummy!!! I had blast ejoyed food till the last grain.
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-card">
+                <i class="fa fa-quote-left fa-2x mb-3"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero veritatis voluptate debitis aspernatur nesciunt
+                  deserunt!
+                </p>
+                <div class="user d-flex">
+                  <div class="user-pic">
+                    <img src="/images/testimonial/testimonial-2.jpg" alt="" />
+                  </div>
+                  <div class="user-review d-block w-100 px-2">
+                    <h6 class="py-0 mb-0">Client Name</h6>
+                    <small
+                      >Yummy!!! I had blast ejoyed food till the last grain.
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-card">
+                <i class="fa fa-quote-left fa-2x mb-3"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero veritatis voluptate debitis aspernatur nesciunt
+                  deserunt!
+                </p>
+                <div class="user d-flex">
+                  <div class="user-pic">
+                    <img src="/images/testimonial/testimonial-3.jpg" alt="" />
+                  </div>
+                  <div class="user-review d-block w-100 px-2">
+                    <h6 class="py-0 mb-0">Client Name</h6>
+                    <small
+                      >Yummy!!! I had blast ejoyed food till the last grain.
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-card">
+                <i class="fa fa-quote-left fa-2x mb-3"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero veritatis voluptate debitis aspernatur nesciunt
+                  deserunt!
+                </p>
+                <div class="user d-flex">
+                  <div class="user-pic">
+                    <img src="/images/testimonial/testimonial-4.jpg" alt="" />
+                  </div>
+                  <div class="user-review d-block w-100 px-2">
+                    <h6 class="py-0 mb-0">Client Name</h6>
+                    <small
+                      >Yummy!!! I had blast ejoyed food till the last grain.
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid px-0">
+        <div class="container">
+          <div class="footer-pack1">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="title">
+                  <h4>Company --</h4>
+                </div>
+                <ul list-unstyled py-3>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#reservation">Reservation</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Condition</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="title">
+                  <h4>Contact --</h4>
+                </div>
+                <ul list-unstyled py-3>
+                  <li class="location">123 Street, New York, USA</li>
+                  <li class="phone">+012 345 67890</li>
+                  <li class="mail">info@example.com</li>
+                </ul>
+                <div class="page-social-handler mx-auto mt-3 mb-0 px-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="title">
+                  <h4>Opening --</h4>
+                </div>
+                <h6 class="py-0 mb-0">Monday-Saturday</h6>
+                <small>09AM - 09PM</small>
+                <br />
+                <h6 class="py-0 mb-0 mt-2">Sunday</h6>
+                <small>10AM - 08PM</small>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="title">
+                  <h4>Newsletter --</h4>
+                </div>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-pack2">
+            <nav class="navbar navbar-expand-lg navbar-2">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <div class="d-flex flex-column">
+                    <span style="font-size: medium"
+                      >&copy, Your Site Name, All Right Reserved. Designed By
+                      HTML Codex</span
+                    >
+                    <span style="font-size: medium"
+                      >Distributed By ThemeWagon</span
+                    >
+                  </div>
+                </a>
+                <ul class="navbar-nav align-self-start">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cookies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

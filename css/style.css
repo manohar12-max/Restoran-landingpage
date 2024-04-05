@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/* all  genral things */
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+/* variables */
+:root {
+  /* background Color */
+  --bg-black-blue: #0f172b;
+  --bg-white: #ffff;
+  --bg-light-white: #666565;
+  --bg-dark-yellow: #fea116;
+  --bg-white1: #666565;
+  --bg-light-white: #f1f8ff;
+  /* text-color */
+  --text-black-blue: #0f172b;
+  --text-white: #fff;
+  --text-white1: #666565;
+  --text-light-white: #f1f8ff;
+  --text-orange: #ff5d2a;
+  --text-yellow: #fea116;
+  /* font */
+  --primary-font: "Nunito Sans", sans-serif;
+  --secondary-font: "Heebo", sans-serif;
+}
+body {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  background-color: var(--bg-white);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-white1);
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+/* custom button */
+.main-btn {
+  background-color: var(--bg-dark-yellow);
+  color: var(--text-white) !important;
+  padding: 8px 24px !important;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.main-btn-nav {
+  padding: 8px 35x;
+}
+/* navbar */
+.header-wrapper .navbar {
+  /* to support browser 2d 3d animation we use webkit is used for chrome */
+  -webkit-transition: all 0.2s linear;
+  /* o is used for opera  */
+  -o-transition: all 0.2s linear;
+  /* microsoft */
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header-wrapper .navbar-brand {
+  font-family: var(--primary-font);
+  color: var(--text-yellow);
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.header-wrapper .navbar-nav .nav-link {
+  color: var(--text-light-white);
+  margin-left: 25px;
+}
+a.nav-link.active {
+  color: var(--text-yellow) !important;
+}
+/* on scroll we will add following class */
+.header-scrolled {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: var(--bg-black-blue);
+  padding-top: 0;
+}
+/* brand */
+
+.banner-wrapper {
+  position: relative;
+  background: url("/images/bg-hero.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 125px;
+  display: block;
+  object-fit: cover;
+  background-position: center;
+}
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0f172b;
+  opacity: 0.9;
+  background-size: cover;
+}
+.banner-container {
+  position: relative;
+  z-index: inherit;
+}
+.banner-wrapper .banner-title {
+  color: var(--text-white);
+  font-weight: 800;
+  font-family: var(--primary-font);
+  font-size: 60px;
+}
+.banner-wrapper .banner-subtitle {
+  color: var(--text-white);
+  font-family: var(--primary-font);
+}
+.banner-wrapper img {
+  max-width: 100%;
+  animation: rotate-img 30s linear infinite;
+}
+@keyframes rotate-img {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* card-section */
+.card-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.card-section .card {
+  border: none;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  padding: 24px 15px 34px 15px;
+  margin: 0 -5px;
+  color: #0f172b;
+  border-radius: 4px;
+}
+.card-section .card-icon {
+  padding: 20px;
+  color: var(--bg-dark-yellow);
+  transition: 0.5s;
+}
+.card-section .card-icon i {
+  font-size: 40px;
+}
+.card-section .card-title {
+  font-weight: 700;
+  font-family: var(--primary-ont);
+  transition: 0.5s;
+}
+.card-section .card-text {
+  color: #666565;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.card-section .card:hover {
+  color: var(--text-white);
+  background-color: #fea116;
+}
+.card-section .card:hover .card-icon {
+  color: var(--bg-white);
+}
+.card-section .card:hover .card-text {
+  color: var(--bg-white);
+}
+
+/* about section */
+.about-wrapper {
+  padding-top:50px ;
+}
+
+.about-wrapper .container .img2 {
+  margin-top: 25%;
+}
+.about-wrapper .container .img3 {
+  margin-left: 25%;
+}
+.about-wrapper .about-us {
+  padding-top: 70px;
+}
+
+.about-wrapper .about-us .about-title1 {
+  font-family: "Pacifico", cursive;
+  color: var(--text-yellow);
+  font-weight: 800;
+}
+
+.about-wrapper .about-us .about-title2 h2 {
+  font-family: var(--primary-font);
+  color: var(--text-black-blue);
+  font-weight: 800;
+}
+.about-wrapper .about-us i {
+  font-size: 25px;
+  color: var(--text-yellow);
+}
+
+.about-wrapper .display-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 4px solid var(--bg-dark-yellow);
+  padding-left: 24px;
+}
+.about-wrapper .display-banner h1 {
+  font-size: 50px;
+  font-family: var(--primary-font);
+  color: var(--text-yellow);
+  font-weight: 800;
+  padding-right: 24px;
+}
+.about-wrapper .display-banner .banner h5 {
+  font-family: var(--primary-font);
+  color: var(--text-black-blue);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 0%;
+}
+/* service */
+.service-wrapper {
+  padding-top: 70px;
+}
+.service-wrapper .service-title {
+  font-family: "Pacifico", cursive;
+  color: var(--text-yellow);
+  font-weight: 800;
+}
+.service-wrapper .service-subtitle h1 {
+  font-family: var(--primary-font);
+  color: var(--text-black-blue);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.service-wrapper .menu-items1 {
+  position: relative;
+}
+.service-wrapper .menu-items1::before {
+  position: absolute;
+  left: -3.1875rem;
+  top: -8px;
+  color: var(--bg-dark-yellow);
+  font-size: 40px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f0f4";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+
+}
+.service-wrapper .menu-items2 {
+  position: relative;
+}
+.service-wrapper .menu-items2::before {
+  position: absolute;
+  left: -3.1875rem;
+  top: -8px;
+  color: var(--bg-dark-yellow);
+  font-size: 40px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f805";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+.service-wrapper .menu-items3 {
+  position: relative;
+}
+.service-wrapper .menu-items3::before {
+  position: absolute;
+  left: -3.19rem;
+  top: -8px;
+  color: var(--bg-dark-yellow);
+  font-size: 40px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f2e7";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+ 
+}
+.service-wrapper .nav-item{
+padding-left: 50px;
+}
+.service-wrapper .nav-item .active{
+    padding-left: 50px;
+    border-bottom: 1px solid #fea116;
+}
+.service-wrapper  span{
+    color: #666565;
+}
+.service-wrapper  h6{
+    color:var(--bg-black-blue);
+    font-weight: 700;
+}
+.service-wrapper .dish-title{
+  border-bottom: 1px solid #dee2e6 !important;
+}
+.service-wrapper .dish-title h5{
+  font-family: var(--primary-font);
+  color:var(--bg-black-blue);
+    font-weight: 800;
+}
+/* booking-form */
+.book-table-form{
+  padding: 100px 0;
+}
+.book-table-form .video-frame{
+  width: 100%;
+  min-height:500px;
+  background: url(/images/video.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.book-table-form .booking-form{
+  width: 100%;
+  min-height:500px;
+  background-color: var(--bg-black-blue);
+}
+.reservation-title {
+  font-family: "Pacifico", cursive;
+  color: var(--text-yellow);
+  font-weight: 800;
+}
+
+.reservation-subtitle h1{
+  font-family: var(--primary-font);
+  color: var(--text-white);
+  font-weight: 900;
+
+}
+.book-table-form .booking-form form {
+margin-top: 50px;
+}
+.book-table-form .booking-form .special-req input{
+  height: 100px;
+}
+/* popular chefs */
+.team-wrapper .team-title {
+  font-family: "Pacifico", cursive;
+  color: var(--text-yellow);
+  font-weight: 800;
+}
+.team-wrapper .team-subtitle h1 {
+  font-family: var(--primary-font);
+  color: var(--text-black-blue);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.team-wrapper .card-section .maincard .card-img img{
+border-radius: 50%;
+}
+.team-wrapper .card-section .maincard .card-img{
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.card-section .maincard {
+  border: none;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  padding: 24px 15px 34px 15px;
+  margin: 0 -5px;
+  color: #0f172b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+/* .team-wrapper .card-section .maincard .card-social-handler {
+ height: 0;
+ } */
+.team-wrapper .card-section .maincard .card-social-handler i{
+ font-size: 15px;
+ padding: 4px 10px 15px 10px ;
+ background-color: #fea116;
+ border-top-left-radius: 50%;
+ border-top-right-radius: 50%;
+ color: #fff;
+}
+
+
+/* .team-wrapper .card-section .maincard:hover .card-social-handler {
+ height: fit-content;
+}  */
+
+.team-wrapper .card-section .maincard:hover img{
+  transform: scale(1.2);
+ } 
+/* testimonial */
+.testimonial-wrapper{
+  padding: 50px;
+}
+.testimonial-wrapper .testimonial-title {
+  font-family: "Pacifico", cursive;
+  color: var(--text-yellow);
+  font-weight: 800;
+}
+.testimonial-wrapper .testimonial-subtitle h1 {
+  font-family: var(--primary-font);
+  color: var(--text-black-blue);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.testimonial-carousel .user-pic img{
+  width: 40px !important;
+
+  border-radius: 50%;
+}
+.testimonial-carousel .user-review h6{
+  font-family: var(--primary-font);
+  color: var(--text-black-blue);
+  font-weight: 800;
+}
+.testimonial-carousel .testimonial-card{
+  border: 1px solid #dee2e6;
+  padding: 24px 15px 34px 15px;
+  margin: 8px;
+  border-radius: 4px;
+  background-color: #ffff;
+}
+.testimonial-carousel .testimonial-card i{
+  color: #fea116;
+  font-size: 40px;
+}
+/* footer */
+
+footer{
+  padding:100px 0 10px 0;
+  background-color: #0f172b;
+  color: var(--text-white);
+}
+.footer-pack1{
+padding-bottom: 50px;
+border-bottom:1px solid #dee2e6;
+}
+.footer-pack1 .title {
+  font-family: "Pacifico", cursive;
+  color: var(--text-yellow);
+  font-weight: 700;
+}
+footer .footer-pack1 ul{
+  list-style: none;
+
+}
+footer .footer-pack1 ul li a{
+ text-decoration: none;
+ color: var(--text-white) ;
+ transition: 0.2s;
+ line-height: 1.2rem;
+}
+footer .footer-pack1 ul li a:hover{
+  font-size: large;
+}
+.footer-pack1 .page-social-handler i{
+  padding:4px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.footer-pack1 .page-social-handler i:hover{
+  color: white;
+  background-color: #fea116;
+}
+.footer-pack1 ul {
+  line-height: 32px;
+  position: relative;
+  
+  }
+  .footer-pack1 ul li::before{
+  position: absolute;
+  left: 0.5rem;
+  color:var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content: '\f105';
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  }
+  .footer-pack1 ul .location::before{
+    position: absolute;
+    left: 0.5rem;
+    color:var(--primary-color);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f3c5' !important;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    }
+    
+.footer-pack1 ul .mail::before{
+      position: absolute;
+      left: 0.5rem;
+      color:var(--primary-color);
+      font-size: 1.25rem;
+      font-family: "Font Awesome 5 Free";
+      content: '\f0e0';
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+      font-weight: 900;
+      }
+      .footer-pack1 ul .phone::before{
+        position: absolute;
+        left: 0.5rem;
+        color:var(--primary-color);
+        font-size: 1.25rem;
+        font-family: "Font Awesome 5 Free";
+        content: '\f095';
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        }
+
+.footer-pack2 .navbar-brand,.navbar-nav a{
+color: var(--text-white) !important;
+}
+.footer-pack2 .navbar-nav a{
+  border-right: 0.5px solid #666565;
+}
